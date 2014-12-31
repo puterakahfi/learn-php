@@ -1,7 +1,5 @@
 <?php
-
 namespace Namespaces\Tests;
-use Namespaces
 
 
 /**
