@@ -1,5 +1,6 @@
 <?php
-namespace ClassNameSpace;
+
+namespace Namespaces;
 
 /**
  * Description of TwoSameClass
@@ -10,11 +11,5 @@ class ClassNamespace
 {
     //put your code here
 }
-
-
-class Classnamespace{
-    
-}
-
 
 

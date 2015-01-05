@@ -1,6 +1,6 @@
 <?php
-namespace Namespaces\Tests;
 
+namespace Namespaces\Tests;
 
 /**
  * Description of TwoSameClassTest
@@ -9,7 +9,10 @@ namespace Namespaces\Tests;
  */
 class TwoSameClassTest extends \PHPUnit_Framework_TestCase
 {
-    function testingCreateClass(){
+
+    function testingCreateClass()
+    {
         $class1 = new ClassNamespace();
     }
+
 }
