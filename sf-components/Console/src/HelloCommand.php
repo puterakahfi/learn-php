@@ -26,7 +26,7 @@ class HelloCommand extends Command
 			"=============================="
 			]);
 
-		$output->write("hello ");
+		$output->write("Hello ");
 		$output->write($input->getArgument("name"));
 	}
 
