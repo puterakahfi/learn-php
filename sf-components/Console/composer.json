@@ -5,6 +5,9 @@
 	"autoload": {
 		"psr-4":{
 			"Learn\\":"src/"
-		}
+		},
+		"exclude-from-classmap": [
+			"/Tests/"
+		]
 	}
 }

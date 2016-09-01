@@ -1,6 +1,6 @@
 <?php
 
-namespace Learn\Symfony\Console;
+namespace Learn;
 
 
 use Symfony\Component\Console\Command\Command;
