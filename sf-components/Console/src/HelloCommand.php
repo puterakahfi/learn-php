@@ -17,17 +17,25 @@ class HelloCommand extends Command
 			->setHelp('This command it allow you to display hello ');
 
 		$this->addArgument("name", InputArgument::REQUIRED, 'Your name:');
+		$this->addArgument("last", InputArgument::OPTIONAL, ' Last Name:');
+
 	}
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$output->writeln([
-			"Display hello world from console",
-			"=============================="
-			]);
+			"<info>Display your name from console</info>",
+			"<comment>==============================</comment>"
+		]);
+
+		$last = $input->getArgument("last");
+		$text = $input->getArgument("name");
+		if($last){
+			$text .= ' '.$input->getArgument("last");
+		}
 
 		$output->write("Hello ");
-		$output->write($input->getArgument("name"));
+		$output->write($text);
 	}
 
 }
